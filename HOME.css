@@ -1,0 +1,406 @@
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgb(234,12,0); /*#FEE8E2;*/
+    padding-bottom: 10vh;
+}
+
+/*---------------------------------1 P A G E`: N A V B A R-----------------------------*/
+.Navbar{   
+    position: fixed;
+    z-index:2;
+    width: 100%;
+}
+.Navbar ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.Navbar ul li{
+    display: inline;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.Navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.Navbar ul li a{
+    color: black;
+    font-family: roboto;
+    font-size: 2vw;
+}
+/*-----------M A I N    H E A D I N G---------------------*/
+.Main_Heading{
+    
+    color: white;/*black;*/
+    background-color: rgb(234,12,0) ;/*#FEE8E2;*/
+    font-family: roboto;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    text-align: center;
+}
+.Main_Heading h1{
+    font-size: 25vw;
+}
+.Main_Heading h6{
+    font-size: 5vw;
+    letter-spacing: 5vw;
+
+}
+
+/*---------------------------------1 P A G E`: 1 P A R T-----------------------------*/
+.main_div1{
+    background-color: white !important;
+    padding-top: 15vh;
+    padding-bottom: 0vh;
+    color: black;
+    width: 100% !important;
+    font-family: roboto;
+    display: flex;
+    padding-left: 5vw;
+}
+.main_div1_1stLine{
+    font-size: 2vw;
+}
+.main_div1_2ndLine{
+    font-size: 5vw;    
+}
+
+/*---------------------------H E A R T   E Y E S---------------------------------------------*/
+.HeartWithEyes {
+    width: 31vw;
+    margin-left: -4vw;
+    height: 63vh !important;
+    /*background-image: url(Eyes.png) ,
+     url(Heart.png);
+     background: no-repeat, no-repeat;
+     background-size: 100% ; */
+    background: no-repeat;
+    animation: bounce 3s ease-in 0s infinite;
+    position: relative;
+}
+
+.HeartWithEyes:hover{
+    transform: scale(1.5) !important;
+   /* cursor: pointer;*/
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+.Heart{
+    position: absolute; /*absolute position relatively to the parent block*/
+}
+
+.Eyes {
+    position: absolute; /*absolute position relatively to the parent block*/
+    max-width: 50%;
+    /* justify-self: center; */
+    margin-left: 25%;
+    margin-top: 14%;
+}
+/*
+@media (min-width: 50vw){
+    .main_div1{
+        height: 50vh;
+        background-color: white;
+    }
+    .main_div1{
+        position: relative;
+    }
+    .main_div1_Lines{
+        position: absolute;
+        top : 0;
+    }
+    .HeartWithEyes{
+        position: absolute;
+        top : 30vh;
+    }
+}*/
+
+/*----------------B O U N C I N G       H E A R T--------------------------*/
+
+@keyframes bounce {
+    0% {    /*specify initial position*/
+        transform:translateY(0);
+        padding-bottom: 9px;
+    }
+    5%{
+        transform:translateY(1%);
+    }
+    10%{
+        transform:translateY(3%);
+    }
+    15%{
+        transform:translateY(5%);
+    }
+    20%{
+        transform:translateY(6%);
+    }
+    25%{
+        transform:translateY(7%);
+    }
+    30%{
+        transform:translateY(7.3%);
+    }
+    35%{
+        transform:translateY(7.5%);
+    }
+
+
+
+    95%{
+        transform:translateY(-1%);
+    }
+    90%{
+        transform:translateY(-3%);
+    }
+    85%{
+        transform:translateY(-5%);
+    }
+    80%{
+        transform:translateY(-6%);
+    }
+    75%{
+        transform:translateY(-7%);
+    }
+    70%{
+        transform:translateY(-7.3%);
+    }
+    65%{
+        transform:translateY(-7.5%);
+    }
+    
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        height: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+/*---------------------------------C A R D S-----------------------------*/
+.Main-Line{ /*IF YOU ENCOUNTER AN EMERGENCY SITUATION
+    FOLLOW THESE THREE BASIC STEPS*/
+    color: white;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: roboto;
+    padding-bottom: 40px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.Cards-Box {
+    background-color: transparent;
+    font-size: 1.2vw;
+    display: grid;  /*brings the box*/
+    place-items: center;    /*to center of the page*/
+    padding: 7% 15%;
+    padding-bottom: 10vh;
+}
+.Card-Set{
+    display: flex;  /*brings the 3 cards adjacent to one another*/    
+
+    justify-content: space-between; /*on the container, to only create space between the elements (and not between the edge of the parent element and items)'*/
+    width: 49%; /*or something similar that is equal to or less than 50%)*/
+    margin: 0 -1vw;
+    height: 100%;
+}
+.Card-Set > div {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 10px;  /* and that, will result in a 10px gap */
+    padding: 20px;
+}
+
+.Card{
+    font-family: roboto;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0.9);
+    background: white;  
+    
+    width: 60vw;
+    text-align: center !important;    
+    cursor: pointer;
+}
+.Card h2{
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+.Card p{
+    color: grey;
+    font-weight: 300;
+    transition: 0.5s ease;
+
+}
+.Card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.Card .icon{
+	color: #ef8172;
+}
+.Card:hover .icon{
+	color: #fa0000;
+}
+ 
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1000px) {
+.Card {
+      flex-direction: column;
+    }
+}
+  
+  
+
+/*------------------------O U T L O O K_----------------------------------------*/
+.Outlook{
+    color: white;
+    background-color: black;
+    font-family: roboto;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-bottom: 10vh;
+    margin: 0;
+}
+.Outlook h2{
+    font-size: 10vw;
+}
+.Outlook p{
+    font-size: 1.5vw;
+    width: 800px;
+}
+
+
+/*-------------------------- S L I D E S H O W      B O X-------------------------------- */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+/* Slides */
+.Slides {
+    display: none;
+    height: 250px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(226, 219, 219);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  /* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: rgb(136, 131, 133);
+}
+  
+.Slides h4 {
+    font-style: bold;
+    letter-spacing: 7px;
+    word-spacing: 12px;
+    font-size: 25px;
+}
+  
+.Numbers {
+    color: rgb(126, 123, 123);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

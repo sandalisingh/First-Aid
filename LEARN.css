@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgb(234,12,0); /*#FEE8E2;*/
+    padding-bottom: 10vh;
+}
+
+
+/*------{   O   K   }---------------------------1 P A G E`: N A V B A R-----------------------------*/
+.Navbar{   
+    position: fixed;
+    z-index:2;
+    width: 100%;
+}
+.Navbar ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.Navbar ul li{
+    display: inline;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.Navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.Navbar ul li a{
+    color: black;
+    font-family: roboto;
+    font-size: 2vw;
+}
+/*-----------S E A R C H    R E S U L T S--------------------*/
+form {
+    text-align: center;
+    display: block;
+    margin-top: 0em;
+    width: 70%;
+}
+
+.box{
+    height: 30px;
+    width: 250px;
+    font-size:large;
+    color: #17202A ;
+    border-radius: 5px;
+    outline: none; 
+    border: none;
+    padding: 12px;
+
+}
+.Procedure-Box {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    height: 65vh;
+    margin: 0 -1vw;
+    background-color: black;
+    padding: 10px;
+}
+.Procedure-Text{
+    font-family: roboto;
+    padding-left: 2vw;
+    width: 50%;
+    height: 50%;
+    overflow:auto;
+    scrollbar-base-color:gold;
+    padding:10px;
+    font-size: 3vh;
+    background-color: white;
+}
+.Procedure-Box h1{
+    font-size: 40px;
+}
+.Procedure-Box h3{
+    font-size: 30px;
+}
+.Procedure-Box h4{
+    font-size: 25px;
+}
+.Procedure-Box p{
+    font-size: 20px;
+}
+.Procedure-Box ul{
+    padding-left: 20px;
+    list-style-type: square;
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+.Procedure-Video iframe {
+    width: 50vw;
+    height: 60vh;
+    border-radius: 5%;
+    padding-right: 45px !important;
+    border-color: black;
+    border-width: 0.5vw;
+    /* margin-right: 1%; */
+}
+.Procedure-Box {
+    padding: 1%;
+    margin: 1%;
+}
+
+.Procedure{
+    width: 50%;
+    float: left;
+    padding: 0.1%;
+}  
+
+/*----------------------------S E A R C H      B A R------------------------------*/
+/*
+.SearchBar{
+    width: 100%;
+}
+.SearchBar form, .buttons-rel{
+    width: 100%;
+}*/
+
+.select-dropdown{
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    padding: 10px;
+}
+#DropdownMenu {
+    width: 30vw;
+    margin-left: 35%;
+}
+
+/*
+form {
+    display: block;
+    margin-top: 0em;
+}
+/*
+span.promise {
+    color: #ac3b61;
+    font-size: 2vw;
+    font-family: 'Trocchi', serif;
+    letter-spacing: 2px;
+    font-weight: 900;
+    padding: 2rem;
+}*//*
+section {
+    display: block;
+}
+/*
+.buttons-rel {
+    display: inline-flex;
+}*//*
+.select-dropdown {
+    width: 30vw;
+    height: 3vw;
+    font-size: 2vw;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #123c69;
+    padding-left: 25px; 
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+select {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Roboto;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}*/
+/*
+button {
+    
+    text-align: center;
+    font-size: 2vw;
+    background-color: #123c69;
+    margin-bottom: 25px;
+    width: 30%;
+    height: 38px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}*/
+/*
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}*/
+/*
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    text-transform: capitalize;
+}*/

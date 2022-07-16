@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgb(234,12,0); /*#FEE8E2;*/
+    padding-bottom: 10vh;
+}
+
+
+/*---------------------------------1 P A G E`: N A V B A R-----------------------------*/
+.Navbar{   
+    position: fixed;
+    z-index:2;
+    width: 100%;
+}
+.Navbar ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.Navbar ul li{
+    display: inline;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.Navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.Navbar ul li a{
+    color: black;
+    font-family: roboto;
+    font-size: 2vw;
+}
+/*-----------------------------------------------------*/
+.Main_Heading h1{ /*KIT*/
+    font-size: 30vw;
+    color: white;
+    background-color:  transparent;
+    font-family: roboto;
+    text-align: center;
+}
+.Main_Heading h4{   /*PREPARE*/ 
+    color: white;;
+    text-align: center;
+    letter-spacing: 50px;
+    padding-top: 150px;
+    background-color:  transparent;
+}
+/*-------------------------------------MULTIPLE FLIP CARD LAYOUT--------------------------------------------*/
+/*
+.Kit-Items-Grid{
+    background-color: black;
+}
+
+.Card-Set{
+    display: flex;  /*brings the 3 cards adjacent to one another*/ /*   
+    justify-content: space-between; /*on the container, to only create space between the elements (and not between the edge of the parent element and items)'*/
+ /*   width: 100%; /*or something similar that is equal to or less than 50%)*/
+ /*   margin: 0 -1vw;
+    background-color: black;
+    padding: 10px;
+    border-radius: 3px;
+}*/
+
+/*-------------------------------------MULTIPLE FLIP CARD LAYOUT--------------------------------------------*/
+/*
+.SearchBar{
+    width: 100%;
+}
+.SearchBar form, .buttons-rel{
+    width: 100%;
+}*/
+.select-dropdown{
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    padding: 10px;
+}
+#DropdownMenu {
+    width: 30vw;
+    margin-left: 35%;
+}
+.SearchBar{
+    padding-bottom: 10vh;
+}
+
+
+/*-------------------------------------FLIP CARD LAYOUT--------------------------------------------*/
+
+.Ans-Box {
+    width: 50vw;
+    height: 50vh;   
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 15px;
+    margin-left: 26vw;
+    width: 100%;
+    height: 100%;
+}
+.Card{
+    width: 50%;
+    height: 50%;
+}
+.Picture{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+}
+.Text{
+    /*
+    width: 100%;*/
+    /*left: 100%;*/
+    font-family: roboto;
+    /*padding-left: 2vw;*/
+   
+    overflow: scroll ;
+    /*overflow:auto;
+    scrollbar-base-color:gold;
+    padding:10px;*/
+    font-size: 3vh;
+    background-color: white;
+}
+/*.card{
+    /flex: 0 1 50%;
+} */
+@media screen and (min-width: 60em) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /*displays the flex items with space between the lines*/
+        align-items: center; /*aligns the flex items in the middle of the container*/
+        height: ;
+    }
+ 
+    .card {
+        flex: 0 1 50%;
+    }
+
+    .Ans-Box {
+        width: 50vw;
+        height: 100vh;   
+    }
+    
+}
+/*
+@media screen and (min-width: 60em) {
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}*/
+
+/*.image{
+    /*display: block;*//*
+    padding-right: 10px;
+    /*width: 100%;
+    height: 100%;*//*
+}*/
+  
+.overlay {
+    font-family: roboto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    border: 3px black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.Picture:hover .overlay {
+    height: 100%;
+}
+  
+.Pict-text {
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
